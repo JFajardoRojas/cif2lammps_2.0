@@ -1,7 +1,8 @@
-# cif2lammps
+# cif2lammps 2.0
 ## Authors
 
 - Ryther Anderson
+- J. Fernando Fajardo-Rojas
 
 ## Motivation
 cif2lammps is a Python 2 or 3 program used to convert crystals (developed initially for metal-organic frameworks) to Large-scale Atomic Molecular Massively Parallel Simulator (LAMMPS) format. 
@@ -11,7 +12,8 @@ cif2lammps can be used to convert ToBaCCo (https://github.com/tobacco-mofs/tobac
 The MZHB (zeolite specific) and ZIF-FF (ZIF specific) force fields are also available. ZIF-FF uses the Generalized Amber Force Field (GAFF) for interactions
 not explicitly parameterized, so there is also a preliminary version of GAFF for use with ZIF-FF (which does not include all the atom types seen in GAFF). 
 UFF4MOF has the most robust atom typing functionality, based on connectivity and geometry. More force fields and the option to use custom force fields will be added. 
-Keep in mind this is the first version of the code, and I (Ryther) wrote it quite quickly, it is becoming more useful/general, but be aware that it may need to be adapted for specific usage cases. 
+This version of cif2lammps features tools to include/read small molecules (currently able to use: Methanol, Water, Hexane and DMF) to generate data and input files to perform calculations in lammps. This is useful when there is interest in the evaluation of MOF-solvent interactions.
+Keep in mind this is the first version of the code, and we wrote it quite quickly, it is becoming more useful/general, but be aware that it may need to be adapted for specific usage cases. 
 
 ## Usage
 Generally speaking just run:
